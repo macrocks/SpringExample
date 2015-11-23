@@ -24,3 +24,28 @@ public class AppInitializer  implements WebApplicationInitializer {
 		servlet.addMapping("/");
 	}
 }
+
+//Another way with Servlet 3.0+ is as below 
+
+/*
+ * 
+ * public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer  {
+
+	@Override
+    protected Class<?>[] getRootConfigClasses() {
+        return new Class[] { WebConfiguration.class };
+    }
+  
+    @Override
+    protected Class<?>[] getServletConfigClasses() {
+        return null;
+    }
+  
+    @Override
+    protected String[] getServletMappings() {
+        return new String[] { "/" };
+    }
+}
+ */
+
+
