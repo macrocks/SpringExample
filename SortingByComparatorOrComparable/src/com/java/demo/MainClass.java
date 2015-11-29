@@ -59,6 +59,20 @@ public class MainClass {
 		 * 
 		 */
 		
+		//Now i want to sort employee array by salary only
+		
+		employeeArray=new Employee[5];
+		employeeArray[0]=new Employee(1,"sujit",20000,"IT");
+		employeeArray[1] =new Employee(2, "Amit", 24000, "HR");
+		employeeArray[2]=new Employee(2,"Ajit",2500,"IT");
+		employeeArray[3] =new Employee(2, "nemo", 12000, "HR");
+		employeeArray[4] =new Employee(4, "Mone", 30000, "HR");
+		
+		
+		System.out.println(Arrays.toString(employeeArray));
+		//here you can pass comparator by which you want to do sorting. this is runtime decided sorting
+		Arrays.sort(employeeArray, new ComparatorBySalary());
+		System.out.println(Arrays.toString(employeeArray));
 	}
 
 }
