@@ -36,6 +36,8 @@ public class MainClass {
 		System.out.println(Arrays.toString(employeeArray));
 		//sorting on array list
 		Collections.sort(employeeCollectionList);
+		//if you want to sort it at runtime by salary then use below code
+		//Collections.sort(employeeCollectionList,new ComparatorBySalary());
 		System.out.println(Arrays.toString(employeeCollectionList.toArray()));
 		/*
 		 * 
